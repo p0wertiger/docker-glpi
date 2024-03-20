@@ -1,6 +1,9 @@
 # GLPI Docker Container
 
-## Supported tags
+## Intro
+This fork replaces Apache with PHP-FPM + Nginx
+
+## Supported GLPI tags
 
 - 10, 10.0, 10.0.14, 10.0.14-1, latest
 - 10.0.12, 10.0.12-3
@@ -26,7 +29,7 @@ GLPI is an incredible ITSM software tool that helps you plan and manage IT chang
 
 This package contains with:
 - OS: Alpine
-- Web Server: Apache2 / PHP
+- Web Server: PHP-FPM / Nginx
 - GLPI application
 - Following plugins are installed in this package:
     - [Accounts](https://github.com/InfotelGLPI/accounts)
@@ -39,7 +42,7 @@ This package contains with:
     - [GLPI Inventory](https://github.com/glpi-project/glpi-inventory-plugin)
 
 Description of each image
-- ppcm/glpi-server : GLPI web server with the UI
+- ppcm/glpi-server : GLPI web server with the UI - PHP-FPM fcgi
 - ppcm/glpi-cron : GLPI cron job, you are in charge for the scheduling (start the job as you want)
 - ppcm/glpi-cron-daemon : GLPI cron job daemon is running with scheduling managed
 ## How to use this images
